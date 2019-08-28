@@ -1,0 +1,30 @@
+1.start program from command line
+2.read in command line parameters and use it
+3.check dirctory and file, open and read file
+4.parser into tokens
+5.normalize
+6.remove stop words
+7.indexing
+8.save to index files
+
+for search
+9.index query
+10. formulat document vectors
+11. formulat qyery vector
+12. calculate similarity
+13. print result
+
+14.before 13, do a rocchio relevence feedback
+
+
+15. Done feedback using rochioo feedbcak algorithm.
+
+1.spell checking can only do replace, not delete, insertion, transpose;
+2.when doing the spell checking, i removede the stop words building the vocabulary. To prevent
+the high frequncy words pollute the result. However, this trade off shows defect when query is natural 
+language like ' how do i hack the internet', in this case, how, do, the, will be "corrected" to some strange
+word with far from the user intention. Since the search side have no way to know the stopword list, i can only
+leave it be like this.
+
+
+reference: stop word list used from: http://www.ranks.nl/stopwords
